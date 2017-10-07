@@ -1,3 +1,13 @@
-<p>
-  contact-list-view works!
-</p>
+<div class="row">
+  <p>Favorites</p>
+  <app-contact-item
+    *ngFor="let contactEle of favorites"
+    [contact]="contactEle"
+    (contactSelected)="onContactSelected(contactEle)"></app-contact-item>
+  <hr>
+  <p>Others</p>
+  <app-contact-item
+    *ngFor="let contactEle of others"
+    [contact]="contactEle"
+    (contactSelected)="onContactSelected(contactEle)"></app-contact-item>
+  </div>
