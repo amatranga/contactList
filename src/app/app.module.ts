@@ -6,6 +6,7 @@ import { ContactDetailViewComponent } from './contact-detail-view/contact-detail
 import { ContactListViewComponent } from './contact-list-view/contact-list-view.component';
 import { ContactItemComponent } from './contact-list-view/contact-item/contact-item.component';
 import { NavbarComponent } from './navbar/navbar.component';
+import { Contact } from './shared/contact.model';
 
 @NgModule({
   declarations: [
