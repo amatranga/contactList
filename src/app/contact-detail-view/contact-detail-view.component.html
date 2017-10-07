@@ -1,3 +1,56 @@
-<p>
-  contact-detail-view works!
-</p>
+<div class="row col-xs-12">
+  <img>
+  <h4>{{ contact.name }}</h4>
+  <img
+    [src]="favorite"
+    alt="{{ contact.isFavorite }}"
+    class="img-responsive"
+    style="cursor:pointer"
+    (click)="toggleFavorite()">
+  <p>{{ contact.companyName }}</p>
+</div>
+<hr>
+<div class="list-group-item">
+  <p
+  *ngIf="home !== ''"
+  class="list-group-item-text">
+  Home:
+  {{ home }}
+  </p>
+  <p
+  *ngIf="mobile !== ''"
+  class="list-group-item-text">
+  Mobile:
+  {{ mobile }}
+  </p>
+  <p
+  *ngIf="work !== ''"
+  class="list-group-item-text">
+  Work:
+  {{ work }}
+  </p>
+  <p
+  *ngIf="street !== ''"
+  class="list-group-item-text">
+  Street Address:
+  {{ street }}
+  </p>
+  <p
+  *ngIf="cityStateCountryZip !== ''"
+  class="list-group-item-text">
+  Address:
+  {{ cityStateCountryZip }}
+  </p>
+  <p
+  *ngIf="birthdate !== ''"
+  class="list-group-item-text">
+  Birthdate:
+  {{ birthdate }}
+  </p>
+  <p
+  *ngIf="email !== ''"
+  class="list-group-item-text">
+  Email:
+  {{ email }}
+  </p>
+</div>
